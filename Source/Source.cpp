@@ -170,6 +170,8 @@ int main()
                 std::cout << n << ' ' << h << ' ' << qh << ' ' << " - " << '\n';
             else
                 std::cout << n << ' ' << h << ' ' << qh << ' ' << r << '\n';
+
+            //std::cout << n << '\n';
             double qh2 = values.first(n * 2, h / 2);
             r = abs((qh2 - qh) / (pow(2, m) - 1));
         } while (abs(r) > EPS);
